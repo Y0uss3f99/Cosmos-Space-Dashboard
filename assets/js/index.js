@@ -415,6 +415,7 @@ function displayPlantes(plantes){
 
 function displayPlantesDet(i){
    document.getElementById("planet-detail-image").setAttribute("src", arr[i].image || '');
+    document.getElementById("planet-detail-description").innerHTML = arr[i].   description ;
     document.getElementById("planet-distance").innerHTML = `${arr[i].   semimajorAxis.toLocaleString()} km`;
     document.getElementById("planet-radius").innerHTML = `${arr[i]. meanRadius.toLocaleString()} km`;
     document.getElementById("planet-mass").innerHTML = `${arr[i].   mass.massValue} × 10<sup>${arr[i]. mass.massExponent}</sup> kg`;
